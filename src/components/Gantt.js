@@ -16,12 +16,12 @@ const algorithmMap = {
 }
 
 export default function Gantt(props) {
-    const [schedule, setSchedule] = useState([]);
+    const [result, setResult] = useState({});
     const [isLoading,setLoading]=useState(false);
     const algorithm = props.algorithm.toString() || "fcfs";
 
     const handleSubmit = (jobs) => {
-        setSchedule(
+        setResult(
             algorithmMap[algorithm](jobs)
         );
         setLoading(true);
@@ -41,7 +41,7 @@ export default function Gantt(props) {
             <Divider></Divider>
 
             
-            {(isLoading)?<CircularIndeterminate/>:<Chart schedule={schedule} />};
+            {(isLoading)?<CircularIndeterminate/>:<Chart result={result} />};
 
             
 

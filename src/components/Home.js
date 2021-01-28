@@ -12,8 +12,9 @@ If you are familiar with computer system architecture, you most probably heard a
  In the past, our operating systems were not able to deal with several processes at a time (only one process was taken into the memory). Nowadays most operating systems allow us to execute several processes concurrently. These systems are called multi-programming systems. In these systems, a Process Scheduler (also called Long Term Scheduler) chooses a process to be taken into the memory to be run from the secondary memory (hard disk, SSD, etc.). Ready processes are usually kept in queues (CPU ready queue & I/O device ready queue). This multi-programming approach has brought about some issues to be considered. In order to avoid making CPU is idle when an input/output device operation is needed during the execution of a process, CPU Schedulers have been started to be used in order to choose another process among available processes. A CPU scheduler decides the next process according to what algorithm it uses.
  Likewise, I/O devices also use some algorithms to determine which process should be the next process. In this chapter, we are going to go over some most commonly used CPU Scheduling Algorithms.
 </p>
+<br></br>
 <div style={{ width: "100%", display: "flex", justifyContent: "center"}}>
-<img src={"/sch1.jpeg"}  /> 
+<img src={"/sch1.png"}  /> 
 </div>
 
 

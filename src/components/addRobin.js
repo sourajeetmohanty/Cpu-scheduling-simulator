@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Jumbotron, Table,Badge } from "reactstrap";
 import Container from '@material-ui/core/Container';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
@@ -69,7 +70,7 @@ function AddPriority(props) {
 
   return (
     <Container>
-      <h1>Add New Job</h1>
+     <h2 style={{  marginLeft: "10px" }}><Badge color="secondary">Add New Job</Badge></h2>
       <br></br>
       <form className={classes.root} onSubmit={handleFormSubmit}>
         { inputFields.map(inputField => (
@@ -120,7 +121,7 @@ function AddPriority(props) {
           type="submit" 
           endIcon={<Icon>send</Icon>}
           onClick={handleSubmit}
-        >Send</Button>
+        >Schedule</Button>
       </form>
     </Container>
   );
