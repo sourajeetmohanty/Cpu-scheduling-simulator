@@ -114,7 +114,7 @@ function Add(props) {
           type="submit" 
           endIcon={<Icon>send</Icon>}
           onClick={handleSubmit}
-        >Send</Button>
+        >Schedule</Button>
       </form>
     </Container>
   );
